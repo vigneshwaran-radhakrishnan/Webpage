@@ -139,7 +139,7 @@ main {
 }
 
 .bio-text {
-    flex: 2; /* Takes up 2/3 of the space */
+    flex: 3;
     min-width: 300px;
 }
 
