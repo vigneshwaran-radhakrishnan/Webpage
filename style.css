@@ -1,8 +1,8 @@
 /* General Body Styles */
 @font-face {
     font-family: 'Gandhi Serif';
-    src: url('GandhiSerif-BoldItalic.woff2') format('woff2'),
-        url('GandhiSerif-BoldItalic.woff') format('woff');
+    src: url('fonts/GandhiSerif-BoldItalic.woff2') format('woff2'),
+        url('fonts/GandhiSerif-BoldItalic.woff') format('woff');
     font-weight: bold;
     font-style: italic;
     font-display: swap;
@@ -10,8 +10,8 @@
 
 @font-face {
     font-family: 'Gandhi Serif';
-    src: url('GandhiSerif-Italic.woff2') format('woff2'),
-        url('GandhiSerif-Italic.woff') format('woff');
+    src: url('fonts/GandhiSerif-Italic.woff2') format('woff2'),
+        url('fonts/GandhiSerif-Italic.woff') format('woff');
     font-weight: normal;
     font-style: italic;
     font-display: swap;
@@ -19,8 +19,8 @@
 
 @font-face {
     font-family: 'Gandhi Serif';
-    src: url('GandhiSerif-Bold.woff2') format('woff2'),
-        url('GandhiSerif-Bold.woff') format('woff');
+    src: url('fonts/GandhiSerif-Bold.woff2') format('woff2'),
+        url('fonts/GandhiSerif-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -28,8 +28,8 @@
 
 @font-face {
     font-family: 'Gandhi Serif';
-    src: url('GandhiSerif-Regular.woff2') format('woff2'),
-        url('GandhiSerif-Regular.woff') format('woff');
+    src: url('fonts/GandhiSerif-Regular.woff2') format('woff2'),
+        url('fonts/GandhiSerif-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -43,7 +43,7 @@
 }
 
 body {
-    font-family: 'Gandhi Serif';
+    font-family: 'Gandhi Serif', Georgia, 'Times New Roman', serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
@@ -52,7 +52,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Gandhi Serif';
+    font-family: 'Gandhi Serif', Georgia, 'Times New Roman', serif;
 }
 
 /* Container for centered content */
