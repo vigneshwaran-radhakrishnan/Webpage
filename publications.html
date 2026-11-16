@@ -35,7 +35,7 @@
                 <div class="paper-body">
                     <h3><a href="https://doi.org/10.1016/j.ijmecsci.2026.111913" target="_blank">An Analysis of Failure in a Shear Specimen</a></h3>
                     <p class="paper-cite">R. Vigneshwaran and A.A. Benzerga. <em>International Journal of Mechanical Sciences</em> 326 (2026) 111913.</p>
-                    <p class="paper-summary">Failure in shear is notoriously hard to predict from first principles. Using the HUNNY porous plasticity theory in finite element simulations of a top-hat shear specimen, we show how voids elongate and rotate inside intense shear bands until crack-like voids coalesce. Depending on the initial void distribution, cracks either start in the bulk and run outward or start at the surface and run inward&mdash;the same two modes seen in experiments.</p>
+                    <p class="paper-summary">Predicting fracture in shear from first principles is notoriously hard. We simulate a top-hat shear specimen to failure with the HUNNY porous plasticity theory: inside the shear band, voids elongate and rotate until crack-like voids coalesce. The initial void distribution decides how the specimen breaks&mdash;cracks either start inside and run outward or start at the surface and run inward, the same two modes seen in experiments.</p>
                 </div>
             </article>
             <article class="paper" id="ijss2026-mg-models">
@@ -43,7 +43,7 @@
                 <div class="paper-body">
                     <h3><a href="https://doi.org/10.1016/j.ijsolstr.2026.114180" target="_blank">A Comparison of Mechanism-Based Plasticity Models for Polycrystalline Magnesium Alloys</a></h3>
                     <p class="paper-cite">R. Vigneshwaran, S. Datta, A.A. Benzerga, and S.P. Joshi. <em>International Journal of Solids and Structures</em> 339 (2026) 114180.</p>
-                    <p class="paper-summary">Crystal plasticity is accurate but expensive. We compare two fast coarse-grained models for magnesium&mdash;a two-surface model (slip and twinning) and a three-surface model (basal slip, non-basal slip, and twinning)&mdash;against crystal plasticity over many textures and grain sizes, tracking the evolving tension&ndash;compression asymmetry, plastic anisotropy, and slip/twin activity. The results guide the construction of physically sound damage models for Mg alloys.</p>
+                    <p class="paper-summary">Crystal plasticity captures the anisotropy of magnesium but is too costly for structural simulations. We test whether two cheaper models can stand in for it across many textures and grain sizes: a two-surface model (slip and twinning) and a three-surface model (basal slip, non-basal slip, and twinning). Calibrated on stress&ndash;strain curves alone, both are checked against the evolving tension&ndash;compression asymmetry, plastic anisotropy, and slip/twin activity, laying the groundwork for physically sound damage models of Mg alloys.</p>
                 </div>
             </article>
             <article class="paper" id="mom2026-ivh">
@@ -51,7 +51,7 @@
                 <div class="paper-body">
                     <h3><a href="https://doi.org/10.1016/j.mechmat.2026.105616" target="_blank">Assessment of Iterated Variational Homogenization for Microstructure Evolution in Porous Materials</a></h3>
                     <p class="paper-cite">R. Vigneshwaran and A.A. Benzerga. <em>Mechanics of Materials</em> 215 (2026) 105616.</p>
-                    <p class="paper-summary">How do pores change shape and rotate once deformation localizes between them? We test iterated variational homogenization estimates against finite element limit analysis for the two basic modes of unhomogeneous yielding. The method captures lateral pore bulging in opening but underpredicts pore shearing and rotation in sliding, where simpler linear estimates with &ldquo;complementary&rdquo; concentration tensors do better.</p>
+                    <p class="paper-summary">When plastic flow localizes between pores, how do the pores change shape and rotate? We test iterated variational homogenization (IVH) against finite element limit analysis in the two basic modes of unhomogeneous yielding. IVH captures lateral pore bulging under opening, except for nearly spherical pores, but under sliding it predicts almost no pore shearing or rotation (dashed line in the figure); simpler linear estimates augmented with &ldquo;complementary&rdquo; concentration tensors match the numerical results.</p>
                 </div>
             </article>
             <article class="paper" id="jmps2025-evolution">
@@ -59,7 +59,7 @@
                 <div class="paper-body">
                     <h3><a href="https://doi.org/10.1016/j.jmps.2024.105973" target="_blank">Unhomogeneous Yielding of Porous Materials&mdash;Evolution Equations</a></h3>
                     <p class="paper-cite">R. Vigneshwaran and A.A. Benzerga. <em>Journal of the Mechanics and Physics of Solids</em> 196 (2025) 105973.</p>
-                    <p class="paper-summary">Evolution equations for porosity, void shape, orientation, and spacing are derived for arbitrarily oriented ellipsoidal voids during unhomogeneous yielding. A complementary field added to the classical Eshelby solution enforces the kinematics of localized yielding, capturing lateral void growth in tension (internal necking) and void shearing into flat micro-cracks. The equations are checked against numerical limit analysis.</p>
+                    <p class="paper-summary">A yield criterion alone cannot predict failure; one must also know how the voids evolve. We derive evolution equations for porosity, void shape, orientation, and spacing of arbitrarily oriented ellipsoidal voids during unhomogeneous yielding, adding a complementary field to the classical Eshelby solution to enforce the kinematics of localized flow. The equations capture lateral void growth in tension, which leads to internal necking, and void shearing into flat micro-cracks, in agreement with numerical limit analysis.</p>
                 </div>
             </article>
             <article class="paper" id="jmps2024-criterion">
@@ -67,7 +67,7 @@
                 <div class="paper-body">
                     <h3><a href="https://doi.org/10.1016/j.jmps.2024.105804" target="_blank">Criterion for Unhomogeneous Yielding of Porous Materials</a></h3>
                     <p class="paper-cite">R. Vigneshwaran and A.A. Benzerga. <em>Journal of the Mechanics and Physics of Solids</em> 192 (2024) 105804.</p>
-                    <p class="paper-summary">A yield criterion is developed for materials containing arbitrarily oriented ellipsoidal voids, built on classical pressure and shear estimates and calibrated with a large set of micromechanical unit-cell calculations. A key prediction is that merely tilting a void sharply lowers the shear strength, and the coupling between tension and shear rotates the yield surface&mdash;giving a micromechanical basis for void closure in shear.</p>
+                    <p class="paper-summary">Most porous plasticity models describe homogeneous yielding, yet failure sets in when plastic flow localizes in the ligaments between voids. We develop a criterion for this unhomogeneous yielding in materials with arbitrarily oriented ellipsoidal voids, calibrated with a large set of micromechanical unit-cell calculations. Merely tilting a void sharply lowers the shear strength, and the coupling between tension and shear rotates the yield surface&mdash;a micromechanical basis for void closure in shear.</p>
                 </div>
             </article>
             <article class="paper" id="ejm2024-shear-vs-tension">
@@ -75,7 +75,7 @@
                 <div class="paper-body">
                     <h3><a href="https://doi.org/10.1016/j.euromechsol.2023.105074" target="_blank">An Analysis of Failure in Shear Versus Tension</a></h3>
                     <p class="paper-cite">R. Vigneshwaran and A.A. Benzerga. <em>European Journal of Mechanics &ndash; A/Solids</em> 104 (2024) 105074.</p>
-                    <p class="paper-summary">Why are materials sometimes less ductile in shear than in tension? Voided unit-cell simulations follow how elastic unloading spreads through the cell, which defines unhomogeneous yielding, and relate it to macroscopic strain localization. The roles of initial porosity and strain hardening in setting the ductility in shear versus tension are examined.</p>
+                    <p class="paper-summary">Why does ductility differ so much between shear and tension? Using voided unit cells, we track how elastic unloading spreads through the cell, which defines unhomogeneous yielding, and relate it to macroscopic strain localization. We then show how initial porosity and strain hardening shift the relative ductility in shear versus tension.</p>
                 </div>
             </article>
             <article class="paper" id="jma2023-two-surface">
@@ -83,7 +83,7 @@
                 <div class="paper-body">
                     <h3><a href="https://doi.org/10.1016/j.jma.2023.04.013" target="_blank">Assessment of a Two-Surface Plasticity Model for Hexagonal Materials</a></h3>
                     <p class="paper-cite">R. Vigneshwaran and A.A. Benzerga. <em>Journal of Magnesium and Alloys</em> 11(12) (2023) 4431&ndash;4444.</p>
-                    <p class="paper-summary">A computationally efficient two-surface model, with separate surfaces for slip and twinning, is assessed against crystal plasticity for magnesium alloys containing voids. Calibrated on minimal data, it reproduces the evolving anisotropy, tension&ndash;compression asymmetry, and void growth and distortion across stress states and loading orientations at a fraction of the cost.</p>
+                    <p class="paper-summary">Magnesium alloys are anisotropic and twin under load, so modeling their fracture usually calls for costly crystal plasticity. A two-surface model, with separate surfaces for slip and twinning, is calibrated on minimal data and then tested against crystal plasticity for voided cells under several stress states and two loading orientations. It reproduces the stress response, void growth, and void distortion at a fraction of the cost, opening the way to high-throughput failure studies.</p>
                 </div>
             </article>
         </div>
