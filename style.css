@@ -401,3 +401,6 @@ footer p { margin: 4px 0; }
     .bio-contact { min-width: 0; }
     .site-header h1 { font-size: 1.8rem; }
 }
+
+.conf-list li { margin-bottom: 8px; }
+.conf-list a { font-weight: bold; }
