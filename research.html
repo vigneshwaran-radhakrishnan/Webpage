@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vigneshwaran Radhakrishnan | Research</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container">
+            <h1>Vigneshwaran Radhakrishnan</h1>
+            <p class="subtitle">Postdoctoral Fellow, University of Houston</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Bio</a></li>
+            <li><a href="research.html" class="active">Research</a></li>
+            <li><a href="publications.html">Publications</a></li>
+            <li><a href="awards.html">Awards</a></li>
+            <li><a href="gallery.html">Life at a Glance</a></li>
+        </ul>
+    </nav>
+
+    <main class="container container-read">
+        <h1 class="page-title">Failure Mechanics across Scales in Extreme Environments</h1>
+
+        <div class="card">
+            <p class="lead">My goal is to predict material failure across scales, under extreme conditions.</p>
+            <p>
+                My research lies at the intersection of theoretical and computational mechanics and concerns plasticity, damage, and failure of materials where predicting residual strength and damage tolerance is crucial.
+                My approach is based on nonequilibrium mechanics, quantum mechanics, and analytical and computational homogenization, whereby physical processes from lower scales are carried to the macroscale constitutive relations used to simulate failure in large-scale structures.
+            </p>
+        </div>
+
+        <div class="card">
+            <h2>Why: Materials fail at every length scale</h2>
+            <figure class="research-fig">
+                <a href="research/panel-why.jpg" target="_blank"><img src="research/panel-why.jpg" alt="Failures from 100 nm to 5 m: hydride embrittlement, electromigration voiding, hypervelocity perforation, fatigue fracture of a fan blade, and heat-shield ablation"></a>
+                <figcaption>Failure starts at the nanoscale in some systems and is decided at the scale of the structure in others. Click to enlarge.</figcaption>
+            </figure>
+            <p>
+                Failure initiates at the nanoscale in some systems and is decided at the scale of the structure in others, yet a model that carries physics across these scales is still lacking.
+                Concerted efforts in modeling ductile failure have led to significant progress, but developing fully predictive models and implementing them in robust finite element codes remains a challenge.
+                For instance, predicting failure under extreme shearing states proved difficult even for traditional materials in the recent
+                <a href="https://www.osti.gov/servlets/purl/2431001" target="_blank">Sandia Fracture Challenge</a>.
+                This difficulty is even more pronounced under extreme environments, often requiring over-conservative design margins that penalize performance.
+                My work started at the micro-to-macro scale transition in predicting the failure of materials.
+            </p>
+        </div>
+
+        <div class="card">
+            <h2>What I built: From microvoids to cracks in structures</h2>
+            <figure class="research-fig">
+                <a href="research/panel-built.jpg" target="_blank"><img src="research/panel-built.jpg" alt="Panel 1: HUNNY theory; panel 2: crack prediction in the Sandia top-hat shear specimen; panel 3: machine-learning damage model trained on HUNNY data"></a>
+                <figcaption>(1) HUNNY porous plasticity theory, (2) crack prediction in a top-hat shear specimen, (3) a machine-learning surrogate. Click to enlarge.</figcaption>
+            </figure>
+            <p>
+                Thus far, my research has predicted failure from the microvoid scale to the specimen scale, and has begun to make this prediction affordable.
+                My work on ductile failure hinges on the mechanics of porous material plasticity, where void nucleation, growth, and coalescence dictate crack initiation and propagation.
+                The key departure from the literature in <strong>HUNNY</strong>, the unified framework developed during my Ph.D., is that void growth and coalescence are actually predicted rather than put in ad hoc (panel 1).
+                Its predictive capability has been demonstrated through three-dimensional simulations of crack initiation and progression.
+                The top-hat specimen of panel 2 is a key example, because failure in shear is extremely challenging to model from first principles, and the model captures the crack modes observed in experiments.
+                Since such simulations are computationally expensive, I then built a machine-learning damage model trained on HUNNY<sup>2</sup> data, retaining the physics at a fraction of the cost (panel 3).
+            </p>
+            <p class="related">
+                Related papers:
+                <a href="publications.html#jmps2024-criterion">yield criterion (JMPS 2024)</a>,
+                <a href="publications.html#jmps2025-evolution">evolution equations (JMPS 2025)</a>,
+                <a href="publications.html#ejm2024-shear-vs-tension">shear vs. tension (EJM-A 2024)</a>,
+                <a href="publications.html#ijms2026-shear-specimen">failure in a shear specimen (IJMS 2026)</a>,
+                <a href="publications.html#jma2023-two-surface">magnesium plasticity models (JMA 2023, IJSS 2026)</a>.
+            </p>
+        </div>
+
+        <div class="card">
+            <h2>Where next: Educating the models with lower-scale physics</h2>
+            <figure class="research-fig">
+                <a href="research/panel-next.jpg" target="_blank"><img src="research/panel-next.jpg" alt="Roadmap: nonequilibrium mechanics of failure, quantum mechanics via continuum, and applications from reentry heat shields to electronics"></a>
+                <figcaption>(4) Nonequilibrium mechanics of failure, (5) quantum mechanics via continuum equations, (6) applications. Click to enlarge.</figcaption>
+            </figure>
+            <p>
+                My models rely on phenomenological representations of lower-scale physics, which are generally fitted to experiments, and a fit cannot be trusted where experiments are out of reach, especially under extreme environments.
+                The aim is therefore to educate them with physics from lower scales.
+                To this end, I recently derived a void nucleation law from a variational principle of nonequilibrium systems, the principle of maximum caliber (panel 4); it will next be extended to extreme environments involving radiation.
+                Certain failures start at the nanoscale, where electron flows also matter, so a further resolution will carry quantum effects upward through continuum equations (panel 5).
+                The resulting laws will then be returned to HUNNY, which will also be extended to other material systems (HCP, BCC, and FCC alloys and high-entropy alloys) and extreme loading conditions such as rate and temperature effects.
+                This closes the loop for a complete physics-based failure prediction built on mechanisms from lower scales.
+            </p>
+            <p>
+                This work bears directly on high-performance materials for blast protection and defense, failure of novel composites for air and space vehicles including reentry heat shields, the residual strength of aging and reusable structures, digital twins for untestable environments such as reactor and fusion walls, and the reliability of electronics packaging.
+                Overall, it aims to deliver a capability that is missing today: predicting failure from the scale at which it starts to the scale of the structure.
+            </p>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="copy-year">2026</span> Vigneshwaran Radhakrishnan. All Rights Reserved.</p>
+            <p class="last-updated">Last updated: <span id="last-updated">November 15, 2026</span></p>
+        </div>
+    </footer>
+    <script src="site.js"></script>
+
+</body>
+</html>
