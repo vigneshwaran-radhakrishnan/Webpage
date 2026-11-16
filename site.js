@@ -9,3 +9,19 @@
     var y = document.getElementById('copy-year');
     if (y) { y.textContent = new Date().getFullYear(); }
 })();
+
+// Footer: total visit count from GoatCounter's public counter.
+// Shows nothing if the counter is unavailable (setting off, network blocks it, offline).
+(function () {
+    var el = document.getElementById('visit-count');
+    if (!el || !window.fetch) { return; }
+    fetch('https://vigneshwaran.goatcounter.com/counter/TOTAL.json')
+        .then(function (r) { return r.ok ? r.json() : null; })
+        .then(function (d) {
+            if (d && d.count) {
+                el.textContent = 'Visits: ' + d.count;
+                el.hidden = false;
+            }
+        })
+        .catch(function () {});
+})();
