@@ -18,7 +18,7 @@
     fetch('https://vigneshwaran.goatcounter.com/counter/TOTAL.json')
         .then(function (r) { return r.ok ? r.json() : null; })
         .then(function (d) {
-            if (d && d.count) {
+            if (d && d.count && d.count !== '0') {
                 el.textContent = 'Visits: ' + d.count;
                 el.hidden = false;
             }
