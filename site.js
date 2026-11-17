@@ -15,7 +15,7 @@
 (function () {
     var el = document.getElementById('visit-count');
     if (!el || !window.fetch) { return; }
-    fetch('https://vigneshwaran.goatcounter.com/counter/TOTAL.json')
+    fetch('https://vigneshwaran.goatcounter.com/counter/TOTAL.json?start=2026-11-16')
         .then(function (r) { return r.ok ? r.json() : null; })
         .then(function (d) {
             if (d && d.count && d.count !== '0') {
